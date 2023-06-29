@@ -1,0 +1,60 @@
+.discover {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.d_row {
+    width: 100%;
+    height: 22%;
+    box-sizing: border-box;
+    
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.d_allBox {
+    height: 100%;
+    width: 20%;
+    background-color: #1f1f1f;
+    border-radius: .6em;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+}
+
+.d_allTitle {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+
+.d_categoryList {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: content-box;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.d_categoryList::-webkit-scrollbar {
+    display: none;
+}
+
+.d_categoryListGap {
+    
+}

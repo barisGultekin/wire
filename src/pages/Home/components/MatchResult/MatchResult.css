@@ -1,0 +1,67 @@
+.matchResultBox {
+    height: 8em;
+    width: 100%;
+    background-color: #1f1f1f;
+    border-radius: .6em;
+
+    box-sizing: border-box;
+    padding: .8em 2em;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+.matchResultBox:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+.mr_home {
+    width: 100%;
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mr_time {
+
+}
+
+.mr_away {
+    width: 100%;
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.mr_teamInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .3em;
+    width: 50%;
+}
+
+.mr_teamLogoContainer {
+    width: 3.6em;
+    height: 3.6em;
+}
+
+.mr_teamLogo {
+    max-width: 100%;
+}
+
+.mr_teamName {
+    font-size: .8em;
+    text-align: center;
+    margin: 0;
+}
+
+.mr_score {
+font-size: 2.4em;
+}

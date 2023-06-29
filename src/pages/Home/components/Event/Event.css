@@ -1,0 +1,28 @@
+.eventBox {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    height: 16em;
+    background-color: #1f1f1f;
+    border-radius: .6em;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.75);
+}
+
+.eventBox:hover {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.9);
+    cursor: pointer;
+}
+
+.eventBoxTitle {
+    font-size: 1.6em;
+    font-weight: bold;
+}

@@ -1,0 +1,101 @@
+.home {
+    display: grid;
+    height: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: .8fr 1fr .6fr repeat(5, 1fr);
+    grid-column-gap: 1.2em;
+    grid-row-gap: 1.2em;
+}
+
+.sectionTitle {
+    margin: 0;
+    margin-bottom: 1em;
+    color: #9E9E9E;
+}
+
+/* HIGHLIGHTS */
+.h_highlights {
+    grid-area: 1 / 1 / 2 / 6;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.h_highlights::-webkit-scrollbar {
+    display: none;
+}
+
+.h_highlightsList {
+    display: flex;
+    gap: 1.2em;
+    white-space: nowrap;
+}
+
+/* LEAGUES */
+.h_leagues {
+    grid-area: 2 / 1 / 4 / 4;
+}
+
+.h_leaguesList {
+    display: flex;
+    gap: 1.2em;
+    white-space: nowrap;
+    padding: 0;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+/* EVENTS */
+.h_events {
+    grid-area: 4 / 1 / 9 / 4;
+    height: 100%;
+}
+
+.h_eventsList {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-flow: row;
+    gap: 1.2em;
+    height: 100%;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.h_eventGap {
+    height: 24em;
+}
+
+/* RECENT MATCHES */
+.h_recentMatches {
+    grid-area: 2 / 4 / 9 / 6;
+    height: 100%;
+    width: 100%;
+}
+
+.h_recentMatchesList {
+    display: grid;
+    grid-template-columns: auto;
+    grid-auto-flow: row;
+    gap: 1.2em;
+    height: 100%;
+    width: 100%;
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.h_matchResultGap {
+    height: 5.8em;
+}
