@@ -7,6 +7,7 @@ import League from "./components/League/League";
 import MatchResult from "./components/MatchResult/MatchResult";
 
 function Home() {
+  console.log(process.env.REACT_APP_API_KEY);
   return (
     <div className="home">
       <div className="h_highlights">
